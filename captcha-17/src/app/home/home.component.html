@@ -1,0 +1,37 @@
+
+<form action="">
+
+    <div class="mb-3">
+        <label class="form-label" for="nombre">Nombre</label>
+        <input class="form-control" type="text" placeholder="Ingrese su nombre">
+        <label class="form-label" for="apellido">Apellido</label>
+        <input class="form-control" type="text" placeholder="Ingrese su apellido">
+    </div>
+    <div  class="mb-3"> 
+        <label class="form-label" for="">Correo</label>
+        <input class="form-control" type="email" placeholder="Ingrese su correo">
+        <label class="form-label" for="">Confirmar correo</label>
+        <input class="form-control" type="email" placeholder="Confirme su correo">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="">Contrasena</label>
+        <input class="form-control" type="password" placeholder="Ingrese su contrasena" maxlength="6">
+        <label class="form-label" for="">Confrimar contrasena</label>
+        <input class="form-control" type="password" placeholder="Confirme su contrasena" maxlength="6">
+        </div>
+    
+    <div class="das">
+     <button type="submit" class="btn btn-primary" (click)="alertaRegistro()">Registrar</button>   
+    </div>
+
+    <div [hidden]="captcha">
+        <p>Verificar si es humano</p>
+        <!--<re-captcha siteKey="6LduExcqAAAAAOVmYF90VSldOFV7t5DDyqchdchw"></re-captcha>>-->
+        <re-captcha siteKey="6LdElRcqAAAAAHUeIenu47TnuGfMo47hL0thJlzD"></re-captcha>
+    
+    </div>
+    <div [hidden]="!captcha">
+    
+    </div>
+</form>

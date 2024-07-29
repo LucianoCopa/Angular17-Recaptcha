@@ -1,0 +1,23 @@
+/* .formulario-general{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.formulario-datos{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+} */
+form{
+    width: 300px;
+    margin: auto;
+}
+.das{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
